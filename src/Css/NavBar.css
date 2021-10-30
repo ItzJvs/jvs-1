@@ -3,10 +3,17 @@
   height: auto; 
   width: 100vw;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .NavBarPage a{ 
   padding: 1rem  2rem  1rem  1rem;
   color: #fff;
-  font-family: 'Courier New', Courier, monospace; 
+  font-family: 'Courier New', Courier, monospace;  
+}
+.NavBarPage a:hover{ 
+  text-shadow: 1px 1px 10px  #fff;
+}
+.active{
+  font-weight: 900;
+  text-shadow: 1px 1px 10px  #fff;
 }
