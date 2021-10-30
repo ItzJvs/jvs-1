@@ -1,0 +1,12 @@
+.NavBarPage{
+  background: rgba(22, 22, 22, 0.5);
+  height: auto; 
+  width: 100vw;
+  display: flex;
+  justify-content: end;
+}
+.NavBarPage a{ 
+  padding: 1rem  2rem  1rem  1rem;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace; 
+}

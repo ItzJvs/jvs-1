@@ -1,0 +1,12 @@
+.BodyPage{
+  font-family: monospace,ui-monospace;
+  font-size: 30px; 
+  
+}
+#HomeContent{
+    position: relative;
+    display: inline-block;
+    top: 10rem;
+    left: 15rem;
+    font-weight: 600; 
+}
