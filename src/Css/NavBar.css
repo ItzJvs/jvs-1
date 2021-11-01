@@ -1,9 +1,10 @@
 .NavBarPage{
   background: rgba(22, 22, 22, 0.5);
   height: auto; 
-  width: 100vw;
+  width: 100% !important;
   display: flex;
   justify-content: flex-end;
+  font-size: 1rem;
 }
 .NavBarPage a{ 
   padding: 1rem  2rem  1rem  1rem;

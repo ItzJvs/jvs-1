@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Home from './Pages/Home';
+import Body from './Pages/Body';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home />
+    <Body />
   </React.StrictMode>,
   document.getElementById('root')
 );

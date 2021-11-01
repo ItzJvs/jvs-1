@@ -1,33 +1,22 @@
-import NavBar from './NavBar';
-import Body from './Body';
-import { useState } from "react";
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route
-} from "react-router-dom";
-
 import '../Css/Home.css';
-
+import SlideBars from './Components/SlidBars';
 export default function Home() {
-    // var backimg = BackgroundHome;
-    const [backimg, setBackimg] = useState("black");
+    var software = "Software";
+    var webdeveloper = "<Web Developer />";
     return <>
-        <Router>
+        <div className="HomePage">
 
-            <div className="HomePage" style={{
-                backgroundImage: `url(${backimg}) `,
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover"
-            }}>
-                <NavBar setBackimg={setBackimg} />
-                <Switch>
-                    <Route exact path="/Home"> <Body /> </Route>
-                    <Route exact path="/Skills">  </Route>
-                    <Route exact path="/Contact"> </Route>
-                    <Route exact path="/Resume"> </Route>
-                </Switch>
-            </div>
-        </Router>
+            <pre id="HomeContent">
+                Hey there,<br></br>
+                I'm Jagtap Vivek..<br></br>
+                <div className="desc">
+                    : Looking For The Job Opportunity <br></br>as<br></br> {software} , {webdeveloper}
+                </div>
+                {/* <div className="exp"> */}
+                <SlideBars />
+                {/* </div> */}
+            </pre>
+
+        </div>
     </>
 }

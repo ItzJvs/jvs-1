@@ -1,12 +1,12 @@
 .Bars{
   position: relative; 
   display: inline-block;
-  left: 40rem;
+  left: 20rem;
   top: -5rem;
   font-size: 12px; 
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
-  text-align: center;
+  text-align: center; 
 }
 .com{
   display: flex; 
