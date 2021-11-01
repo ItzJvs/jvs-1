@@ -1,20 +1,23 @@
 import NavBar from './NavBar';
+import BackgroundHome from "../assets/home.jpg";
 import Body from './Body';
 import { useState } from "react";
 import {
     BrowserRouter as Router,
     Switch,
-    Route
+    Route,
+    Redirect
 } from "react-router-dom";
 
 import '../Css/Home.css';
 
 export default function Home() {
     // var backimg = BackgroundHome;
-    const [backimg, setBackimg] = useState("black");
+    const [backimg, setBackimg] = useState(BackgroundHome);
+
     return <>
         <Router>
-
+            <Redirect to="/Home" />
             <div className="HomePage" style={{
                 backgroundImage: `url(${backimg}) `,
                 backgroundRepeat: "no-repeat",
