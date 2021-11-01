@@ -1,31 +1,36 @@
 import NavBar from './NavBar';
 import BackgroundHome from "../assets/home.jpg";
 import Home from './Home';
-import About from './About';
 import { useState } from "react";
 import {
     BrowserRouter as Router,
     Switch,
-    Route,
-    Redirect
+    Route, Redirect
 } from "react-router-dom";
 
 import '../Css/Body.css';
 
 export default function Body() {
-
     const [backimg, setBackimg] = useState(BackgroundHome);
-
-    return <div className="HomePage" >
+    return <div className="Body">
         <Router>
             <Redirect to="/Home"></Redirect>
-            <NavBar setBackimg={setBackimg} ></NavBar>
-            <Switch>
-                <Route exact to="/Home"><Home /> </Route>
-                <Route to="/About"> <About /></Route>
-                <Route to="/Resume"></Route>
-                <Route to="/Contact"> </Route>
-            </Switch>
+            <div className="Body" style={{
+                backgroundImage: `url(${backimg}) `,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundAttachment: "fixed"
+            }}>
+                <NavBar setBackimg={setBackimg} />
+                <Switch>
+                    <Route exact path="/Home"> <Home /> </Route>
+                    <Route exact path="/About">  </Route>
+                    <Route exact path="/Contact"> </Route>
+                    <Route exact path="/Resume"> </Route>
+                </Switch>
+            </div>
         </Router>
     </div>
 }
+
+

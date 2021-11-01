@@ -1,14 +1,24 @@
-*{
-    margin: 0;
-    padding:0; 
-    color: #fff;
-    /* user-select: none;   */
-    text-decoration: none;
+.HomePage{
+  font-family: monospace,ui-monospace;
+  font-size: 30px;
+  height: 100vh;
+  overflow: hidden;
 }
+#HomeContent{
+    position: relative; 
+    display:inline; 
+    height: auto;
+    width: auto;
+    top: 10rem;
+    left: 15rem;
+    font-weight: 600; 
+}
+.desc{
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  left: 10rem;
+  top: 1.9rem;
+  font-size: 16px; 
+}  
 
-.HomePage{ 
-     
-    /* background-size:cover; */
-    height:100vh;
-    width: 100vw;
-}
