@@ -16,7 +16,7 @@ export default function Body() {
     const [backimg, setBackimg] = useState(BackgroundHome);
     return <div className="Body">
         <Router>
-            {/* <Redirect to="/Home"></Redirect> */}
+            <Redirect to="/Home"></Redirect>
             <div className="Body" style={{
                 backgroundImage: `url(${backimg}) `,
                 backgroundRepeat: "no-repeat",
@@ -25,10 +25,10 @@ export default function Body() {
             }}>
                 <NavBar setBackimg={setBackimg} />
                 <Switch>
-                    <Route exact path="jvs/"> <Home /> </Route>
-                    <Route exact path="jvs/About">  <About /></Route>
-                    <Route exact path="jvs/Resume"> </Route>
-                    <Route exact path="jvs/Contact"><Contact /> </Route>
+                    <Route exact path="*/Home"> <Home /> </Route>
+                    <Route exact path="*/About">  <About /></Route>
+                    <Route exact path="*/Resume"> </Route>
+                    <Route exact path="*/Contact"><Contact /> </Route>
                 </Switch>
             </div>
         </Router>
