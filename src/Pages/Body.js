@@ -25,7 +25,7 @@ export default function Body() {
             }}>
                 <NavBar setBackimg={setBackimg} />
                 <Switch>
-                    <Route exact path="/jvs"> <Home /> </Route>
+                    <Route exact path="/JVS/"> <Home /> </Route>
                     <Route exact path="/About">  <About /></Route>
                     <Route exact path="/Resume"> </Route>
                     <Route exact path="/Contact"><Contact /> </Route>
