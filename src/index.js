@@ -7,6 +7,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Body />
   </React.StrictMode>,
+  // console.log("doneeeeeeeeeeeeeeeeee!"),
   document.getElementById('root')
 );
 reportWebVitals();
