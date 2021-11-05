@@ -16,7 +16,7 @@ export default function Body() {
     const [backimg, setBackimg] = useState(BackgroundHome);
     return <div className="Body">
         <Router>
-            <Redirect to="/Home"></Redirect>
+            {/* <Redirect to="/Home"></Redirect> */}
             <div className="Body" style={{
                 backgroundImage: `url(${backimg}) `,
                 backgroundRepeat: "no-repeat",
