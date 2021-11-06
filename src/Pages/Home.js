@@ -11,9 +11,7 @@ export default function Home() {
                 <div className="desc">
                     : Looking For The Job Opportunity <br></br>as<br></br> {software} , {webdeveloper}
                 </div>
-                {/* <div className="exp"> */}
                 <SlideBars />
-                {/* </div> */}
             </pre>
 
         </div>
