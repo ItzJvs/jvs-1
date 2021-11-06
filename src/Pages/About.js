@@ -7,19 +7,19 @@ import Me from "../assets/me2.png";
 import { Education, Attribute, Skills, Projects } from '../Pages/Components/Attributes';
 export default function About() {
     const [lineWidth, setLineWidth] = useState(10);
-    useEffect(() => {
-        console.log("in the about");
-        let i = 10;
-        var interval = setInterval(() => {
-            if (i > 700) {
-                clearInterval(interval);
-            }
-            i = i + 2;
-            setLineWidth(i);
-        }, 1);
-        return () => { console.log("Unmounteed"); clearInterval(interval) }
+    // useEffect(() => {
+    //     console.log("in the about");
+    //     let i = 10;
+    //     var interval = setInterval(() => {
+    //         if (i > 700) {
+    //             clearInterval(interval);
+    //         }
+    //         i = i + 2;
+    //         setLineWidth(i);
+    //     }, 1);
+    //     return () => { console.log("Unmounteed"); clearInterval(interval) }
 
-    }, []);
+    // }, []);
     return <div className="About">
 
         <div className="Intro">
