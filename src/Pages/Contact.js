@@ -4,6 +4,7 @@ import instagram from "../assets/instagram.png";
 import whatsapp from "../assets/whatsapp.png";
 import github from "../assets/github.png";
 export default function Contact() {
+    console.log("in the contact");
     return <div className="Contact">
         <div className="IntroContact">
             <div className="Grid_Item">

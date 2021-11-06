@@ -8,6 +8,7 @@ import { Education, Attribute, Skills, Projects } from '../Pages/Components/Attr
 export default function About() {
     const [lineWidth, setLineWidth] = useState(10);
     useEffect(() => {
+        console.log("in the about");
         let i = 10;
         var interval = setInterval(() => {
             if (i > 700) {
