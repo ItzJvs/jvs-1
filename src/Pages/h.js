@@ -11,7 +11,7 @@ export default function H() {
             <div className="desc">
                 : Looking For The Job Opportunity <br></br>as<br></br> {software} , {webdeveloper}
             </div>
-            <SlideBars />
+            {/* <SlideBars /> */}
         </pre>
 
     </div>
