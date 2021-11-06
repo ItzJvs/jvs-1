@@ -9,7 +9,7 @@ import {
     HashRouter as Router,
     Switch,
     Route,
-    // Redirect
+    Redirect
 } from "react-router-dom";
 
 import '../Css/Body.css';
@@ -17,6 +17,7 @@ import '../Css/Body.css';
 export default function Body() {
     const [backimg, setBackimg] = useState(BackgroundHome);
     return <Router>
+        <Redirect to="/Home"></Redirect>
         <div className="Body">
             <div className="Body" style={{
                 backgroundImage: `url(${backimg}) `,

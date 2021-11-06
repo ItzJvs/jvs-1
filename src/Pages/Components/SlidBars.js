@@ -21,7 +21,7 @@ export default function SlideBars() {
             if (i <= 150) setReactJsProg(i + "px")
             if (i <= 80) setJavaProg(i + "px")
             if (i <= 130) setFlutterProg(i + "px")
-            if (i <= 70) setGitProg(i + "px")
+            if (i <= 100) setGitProg(i + "px")
             // 
             if (i === 200) clearInterval(web)
             i = i + 2;
