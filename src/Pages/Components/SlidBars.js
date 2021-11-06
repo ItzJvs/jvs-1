@@ -4,8 +4,7 @@ import Insta from "../../assets/instagram.png";
 import Facebook from "../../assets/facebook.png";
 import Whatsapp from "../../assets/whatsapp.png";
 import Email from "../../assets/email.png";
-import { useState } from "react/cjs/react.development";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 export default function SlideBars() {
 
