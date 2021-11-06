@@ -17,9 +17,8 @@ import '../Css/Body.css';
 export default function Body() {
     console.log("in the Home");
     const [backimg, setBackimg] = useState(BackgroundHome);
-    return <div className="Body">
-        <Router>
-            {/* <Redirect to="/Home"></Redirect> */}
+    return <Router>
+        <div className="Body">
             <div className="Body" style={{
                 backgroundImage: `url(${backimg}) `,
                 backgroundRepeat: "no-repeat",
@@ -28,14 +27,14 @@ export default function Body() {
             }}>
                 <NavBar setBackimg={setBackimg} />
                 <Switch>
-                    <Route exact path="/Home"> <Home /> </Route>
-                    <Route exact path="/About">  <About /></Route>
-                    <Route exact path="/Resume"> <Resume /> </Route>
-                    <Route exact path="/Contact"><Contact /> </Route>
+                    <Route exact path="*/Home"> <Home /> </Route>
+                    <Route exact path="*/About">  <About /></Route>
+                    <Route exact path="*/Resume"> <Resume /> </Route>
+                    <Route exact path="*/Contact"><Contact /> </Route>
                 </Switch>
             </div>
-        </Router>
-    </div>
+        </div>
+    </Router>
 }
 
 
