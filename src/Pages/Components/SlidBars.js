@@ -15,19 +15,18 @@ export default function SlideBars(props) {
     const [FlutterProg, setFlutterProg] = useState("10px");
     const [GitProg, setGitProg] = useState("10px");
     useEffect(() => {
-        return () => {
-            var i = 10;
-            var web = setInterval(() => {
-                if (i <= 200) setWebProg(i + "px");
-                if (i <= 150) setReactJsProg(i + "px")
-                if (i <= 80) setJavaProg(i + "px")
-                if (i <= 130) setFlutterProg(i + "px")
-                if (i <= 70) setGitProg(i + "px")
-                // 
-                if (i === 200) clearInterval(web)
-                i = i + 2;
-            }, 15);
-        }
+        var i = 10;
+        var web = setInterval(() => {
+            if (i <= 200) setWebProg(i + "px");
+            if (i <= 150) setReactJsProg(i + "px")
+            if (i <= 80) setJavaProg(i + "px")
+            if (i <= 130) setFlutterProg(i + "px")
+            if (i <= 70) setGitProg(i + "px")
+            // 
+            if (i === 200) clearInterval(web)
+            i = i + 2;
+        }, 15);
+        return () => { console.log("Unmounteed"); clearInterval(web) }
     }, []);
 
     const Progress = (props) => {

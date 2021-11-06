@@ -17,6 +17,7 @@ export default function About() {
             i = i + 2;
             setLineWidth(i);
         }, 1);
+        return () => { console.log("Unmounteed"); clearInterval(interval) }
 
     }, []);
     return <div className="About">
