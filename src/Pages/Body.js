@@ -15,7 +15,6 @@ import {
 import '../Css/Body.css';
 
 export default function Body() {
-    console.log("in the Home");
     const [backimg, setBackimg] = useState(BackgroundHome);
     return <Router>
         <div className="Body">
