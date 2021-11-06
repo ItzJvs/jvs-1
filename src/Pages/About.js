@@ -7,7 +7,7 @@ import Attribute, { Education, Skills, Projects } from '../Pages/Components/Attr
 export default function About() {
     const [lineWidth, setLineWidth] = useState(10);
     useEffect(() => {
-        console.log("in the about");
+
         let i = 10;
         var interval = setInterval(() => {
             if (i > 700) {
@@ -16,7 +16,7 @@ export default function About() {
             i = i + 2;
             setLineWidth(i);
         }, 1);
-        return () => { console.log("Unmounteed"); clearInterval(interval) }
+        return () => { clearInterval(interval) }
 
     }, []);
     return <div className="About">

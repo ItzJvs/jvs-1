@@ -8,7 +8,7 @@ export default function NavBar({ setBackimg }) {
     return <div className="NavBarPage">
         <NavLink onClick={() => { setBackimg(BackgroundHome) }} to="/Home"> Home </NavLink>
         <NavLink activeClassName="active" onClick={() => { setBackimg(BackgroundSkills) }} to="/About"> About </NavLink>
-        <NavLink activeClassName="active" onClick={() => { setBackimg(BackgroundHome) }} to="/Resume"> Résumé </NavLink>
+        <a target="_blank" rel="noreferrer" href="https://mrunkn.000webhostapp.com/Resume/Jagtap_Vivek_Somnath_Resume.pdf" download> Résumé </a>
         <NavLink activeClassName="active" onClick={() => { setBackimg(BackgroundContact) }} to="/Contact"> Contact </NavLink>
     </div>
 }

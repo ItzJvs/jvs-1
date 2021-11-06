@@ -26,7 +26,7 @@ export default function SlideBars() {
             if (i === 200) clearInterval(web)
             i = i + 2;
         }, 15);
-        return () => { console.log("Unmounteed"); clearInterval(web) }
+        return () => { clearInterval(web) }
     }, []);
 
     const Progress = (props) => {
