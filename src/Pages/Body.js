@@ -1,9 +1,7 @@
 import NavBar from './NavBar';
 import BackgroundHome from "../assets/home.jpg";
-// import Home from './Home';
-// import About from './About';
-import A from './a';
-import H from './h';
+import Home from './Home';
+import About from './About';
 import Contact from './Contact';
 import Resume from './Resume';
 import { useState } from "react";
@@ -28,8 +26,8 @@ export default function Body() {
             }}>
                 <NavBar setBackimg={setBackimg} />
                 <Switch>
-                    <Route exact path="*/Home"> <H /> </Route>
-                    <Route exact path="*/About">  <A /></Route>
+                    <Route exact path="*/Home"> <Home /> </Route>
+                    <Route exact path="*/About">  <About /></Route>
                     <Route exact path="*/Resume"> <Resume /> </Route>
                     <Route exact path="*/Contact"><Contact /> </Route>
                 </Switch>

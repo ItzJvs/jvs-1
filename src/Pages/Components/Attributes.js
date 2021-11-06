@@ -1,5 +1,5 @@
 const tab = "     ";
-const Attribute = (props) => {
+export default function Attribute(props) {
     return <div className="Attribute">
         <span>{props.title}</span>
         <span>{props.description}</span>
@@ -30,4 +30,4 @@ const Projects = <pre className="Projects">
     <a target="_blank" rel="noreferrer" href="https://mrunkn.000webhostapp.com/Projects/CALCULATOR/"> Calculator</a><br></br>
 </pre>
 
-export { tab, Education, Attribute, Skills, Projects };
+export { tab, Education, Skills, Projects };

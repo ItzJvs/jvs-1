@@ -7,27 +7,28 @@ import Email from "../../assets/email.png";
 import { useState } from "react/cjs/react.development";
 import { useEffect } from "react";
 
-export default function SlideBars(props) {
+export default function SlideBars() {
 
     const [WebProg, setWebProg] = useState("10px");
     const [ReactJsProg, setReactJsProg] = useState("10px");
     const [JavaProg, setJavaProg] = useState("10px");
     const [FlutterProg, setFlutterProg] = useState("10px");
     const [GitProg, setGitProg] = useState("10px");
-    // useEffect(() => {
-    //     var i = 10;
-    //     var web = setInterval(() => {
-    //         if (i <= 200) setWebProg(i + "px");
-    //         if (i <= 150) setReactJsProg(i + "px")
-    //         if (i <= 80) setJavaProg(i + "px")
-    //         if (i <= 130) setFlutterProg(i + "px")
-    //         if (i <= 70) setGitProg(i + "px")
-    //         // 
-    //         if (i === 200) clearInterval(web)
-    //         i = i + 2;
-    //     }, 15);
-    //     return () => { console.log("Unmounteed"); clearInterval(web) }
-    // }, []);
+
+    useEffect(() => {
+        var i = 10;
+        var web = setInterval(() => {
+            if (i <= 200) setWebProg(i + "px");
+            if (i <= 150) setReactJsProg(i + "px")
+            if (i <= 80) setJavaProg(i + "px")
+            if (i <= 130) setFlutterProg(i + "px")
+            if (i <= 70) setGitProg(i + "px")
+            // 
+            if (i === 200) clearInterval(web)
+            i = i + 2;
+        }, 15);
+        return () => { console.log("Unmounteed"); clearInterval(web) }
+    }, []);
 
     const Progress = (props) => {
         return <div className="com"> {props.subname ? props.subname : props.name}    :  <div style={{ width: props.Progress }} className={props.name}></div> </div>
