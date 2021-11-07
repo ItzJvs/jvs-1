@@ -4,7 +4,7 @@
     color: #fff;
     user-select: none;  
     text-decoration: none; 
-    overflow: hidden !important;
+    overflow: hidden;
   }
 .Body{  
     height:100vh ;

@@ -88,11 +88,5 @@
     
 }
 
-@media screen and (max-width: 450px) {
-    .Bars{
-        left: 3.5rem;
-        top: 8rem;
-        display: flex; 
-        width: 18rem;
-      }
-}
+
+

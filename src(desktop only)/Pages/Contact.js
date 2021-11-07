@@ -7,7 +7,7 @@ export default function Contact() {
     return <div className="Contact">
         <div className="IntroContact">
             <div className="Grid_Item">
-                <pre>Mobile    : +917066649832 </pre>
+                <pre>Mobile    : +917066649832                 </pre>
             </div><div></div>
             <div className="Grid_Item">
                 <pre> Email  : jagtapvs9832@gmail.com</pre>

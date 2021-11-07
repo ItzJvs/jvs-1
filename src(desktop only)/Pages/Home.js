@@ -5,10 +5,10 @@ export default function Home() {
     var webdeveloper = "<Web Developer />";
     return <div className="HomePage">
         <pre id="HomeContent">
-            <p>Hey there,<br></br>
-                I'm Jagtap Vivek..<br></br></p>
+            Hey there,<br></br>
+            I'm Jagtap Vivek..<br></br>
             <div className="desc">
-                Looking For The Job Opportunity <br></br>as<br></br> {software} , {webdeveloper}
+                : Looking For The Job Opportunity <br></br>as<br></br> {software} , {webdeveloper}
             </div>
             <SlideBars />
         </pre>

@@ -22,3 +22,28 @@
   font-size: 16px; 
 }  
 
+@media screen and (max-width: 450px) {
+  .HomePage{
+    font-family: monospace,ui-monospace;
+    font-size: 30px;
+    height: 100vh;
+    text-align: center;
+  }
+  #HomeContent{
+      position: relative; 
+      display:inline; 
+      height: auto;
+      width: auto;
+      left: 1px;
+      top: 2.5rem;
+      font-weight: 400; 
+  }
+  .desc{
+    font-size: 16px;  
+    position: relative;
+    display: flex;
+    left: 4rem;
+    top: 4rem;
+    width: fit-content;
+  }  
+}

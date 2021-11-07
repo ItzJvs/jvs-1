@@ -5,7 +5,6 @@
     justify-content: center;
     align-items: center;
 }
-
 .IntroContact{
     display: grid;  
     padding: 2.5rem; 
@@ -40,7 +39,8 @@
 .Grid_Item2 { 
     background-color: rgb(107, 174, 161);
     display: flex;   
-    align-self: center; 
+    align-self: center;
+    
     margin: 0.5rem;
     margin-left: 25%;
     margin-right: 25%;
@@ -50,32 +50,4 @@
 }
 .Grid_Item_middle{
     width: 10rem;
-}
-
-@media screen and (max-width:450px){
-    .Contact{
-        height: 100%;
-        width: 100vw; 
-        display: flex;  
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .IntroContact{
-        display: flex;  
-        flex-direction: column;
-        padding: 0rem; 
-        margin: 0rem; 
-        line-height: 8rem; 
-        position: relative;
-        left: 2.5rem; 
-        top: -2rem;
-    }
-    .Grid_Item, .Grid_Item_middle{ 
-        padding: 0.3rem;
-        margin: 0.5rem;
-        height: fit-content;
-        width: 20rem; 
-        /* width: 20rem;  */
-        text-align: center ;
-    }
 }
