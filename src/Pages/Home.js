@@ -3,6 +3,7 @@ import SlideBars from './Components/SlidBars';
 export default function Home() {
     var software = "Software";
     var webdeveloper = "<Web Developer />";
+
     return <div className="HomePage">
         <pre id="HomeContent">
             <p>Hey there,<br></br>
@@ -12,6 +13,5 @@ export default function Home() {
             </div>
             <SlideBars />
         </pre>
-
     </div>
 }
