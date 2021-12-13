@@ -12,6 +12,9 @@
   border-radius: 1rem;
   background: rgba(10,10,10,0.2);
   width: 25rem;
+} 
+* img{
+    cursor: pointer;
 }
 .com{
   display:flex; 

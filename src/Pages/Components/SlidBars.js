@@ -22,7 +22,6 @@ export default function SlideBars() {
             if (i <= 80) setJavaProg(i + "px")
             if (i <= 130) setFlutterProg(i + "px")
             if (i <= 100) setGitProg(i + "px")
-            // 
             if (i === 200) clearInterval(web)
             i = i + 2;
         }, 15);

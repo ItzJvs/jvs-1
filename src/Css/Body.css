@@ -4,8 +4,11 @@
     color: #fff;
     user-select: none;  
     text-decoration: none; 
-    overflow: hidden !important;
-    cursor: pointer;
+    overflow: hidden !important;  
+    cursor: none;
+  }
+  * a{
+    /* cursor: pointer !important;  */
   }
 .Body{  
     height:100vh ;
@@ -22,6 +25,7 @@
   border-radius:50%;
   transition: 0 ease-in-out;
   z-index: 0;
+  cursor: none;
 }
 .Clicked{
   border-width: 0.5rem;
@@ -33,4 +37,4 @@
   #Cursor{
     display: none;
   }
-}
+} 

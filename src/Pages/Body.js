@@ -28,10 +28,6 @@ export default function Body() {
         }, 100);
     })
 
-    if (window.outerWidth <= 450) {
-        document.removeEventListener('click', this)
-    }
-
     const [backimg, setBackimg] = useState(BackgroundHome);
     return <Router>
         <Redirect to="/Home"></Redirect>
