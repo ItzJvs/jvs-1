@@ -33,8 +33,9 @@ export default function SlideBars() {
         return <div className="com"> {props.subname ? props.subname : props.name}    :  <div style={{ width: props.Progress }} className={props.name}></div> </div>
     }
     const Social = ({ media, classname, link }) => {
-        return <> <a href={link} target="blank" ><img className={classname} src={media} alt="img" ></img> </a> </>
+        return <div> <a href={link} target="blank" ><img className={classname} src={media} alt="img" ></img> </a> </div>
     }
+
     return <div className="Bars">
         <i>" Exploaring.. : " </i>
         <Progress Progress={WebProg} name="Web" subname="Web Dev" />
@@ -43,11 +44,11 @@ export default function SlideBars() {
         <Progress Progress={FlutterProg} name="Flutter" />
         <Progress Progress={GitProg} name="Git    " />
         <div className="Social">
-            <Social classname=" Linkedin " link="https://www.linkedin.com/in/vivek-jagtap-21353b216/" media={Linkedin} />
-            <Social classname=" Email " link="mailto:jagtapvs9832@gmail.com" media={Email} />
-            <Social classname=" Insta " link="https://www.instagram.com/another._.coder._/" media={Insta} />
-            <Social classname=" Whatsapp " link="https://api.whatsapp.com/send/?phone=917066649832&text=hello" media={Whatsapp} />
-            <Social classname=" Facebook " link="https://www.facebook.com/vivek.raje.127" media={Facebook} />
+            <Social classname="Linkedin" link="https://www.linkedin.com/in/vivek-jagtap-21353b216/" media={Linkedin} />
+            <Social classname="Email" link="mailto:jagtapvs9832@gmail.com" media={Email} />
+            <Social classname="Insta" link="https://www.instagram.com/another._.coder._/" media={Insta} />
+            <Social classname="Whatsapp" link="https://api.whatsapp.com/send/?phone=917066649832&text=hello" media={Whatsapp} />
+            <Social classname="Facebook" link="https://www.facebook.com/vivek.raje.127" media={Facebook} />
         </div>
     </div>
 
