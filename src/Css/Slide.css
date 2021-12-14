@@ -66,31 +66,10 @@
      
 } 
 
-.Linkedin:hover{
+.SocialSite:hover{
     border-radius: 50%;   
     box-shadow: 0px 00px  10px white; 
-}
-.Email:hover{ 
-     border-radius: 50%;   
-     box-shadow: 0px 00px  10px white;
-
-}
-.Insta:hover{ 
-    border-radius: 50%;   
-    box-shadow: 0px 00px  10px white;
-
-}
-.Whatsapp:hover{
-     border-radius: 50%;    
-     box-shadow: 0px 00px  10px white;
-
-}
-.Facebook:hover{
-         box-shadow: 0px 00px  10px white;
-         border-radius: 50%;    
-    
-}
-
+} 
 @media screen and (max-width: 450px) {
     .Bars{
         left: 3.5rem;
