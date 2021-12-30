@@ -18,19 +18,19 @@ export default function SlideBars() {
     useEffect(() => {
         var i = 10;
         var web = setInterval(() => {
-            if (i <= 55) setWebProg(i + "%");
-            if (i <= 40) setReactJsProg(i + "%")
-            if (i <= 35) setJavaProg(i + "%")
-            if (i <= 40) setFlutterProg(i + "%")
-            if (i <= 30) setGitProg(i + "%")
+            if (i <= 200) setWebProg(i + "px");
+            if (i <= 150) setReactJsProg(i + "px")
+            if (i <= 80) setJavaProg(i + "px")
+            if (i <= 130) setFlutterProg(i + "px")
+            if (i <= 100) setGitProg(i + "px")
             if (i === 200) clearInterval(web)
-            i = i + 0.5;
+            i = i + 2;
         }, 15);
         return () => { clearInterval(web) }
     }, []);
 
     const Progress = (props) => {
-        return <div className="com"> {props.subname ? props.subname : props.name}    :  <div style={{ width: props.Progress }} className={props.name}></div>  </div>
+        return <div className="com"> {props.subname ? props.subname : props.name}    :  <div style={{ width: props.Progress }} className={props.name}></div> </div>
     }
     const Social = ({ media, classname, link }) => {
         return <div> <a href={link} target="blank" ><img className={classname} src={media} alt="img" ></img> </a> </div>
