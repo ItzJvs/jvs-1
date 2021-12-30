@@ -1,4 +1,4 @@
-const tab = "     ";
+const tab = "   ";
 export default function Attribute(props) {
     return <div className="Attribute">
         <span>{props.title}</span>
@@ -10,8 +10,8 @@ const Education = <div className="Education"><pre>
     <span className="Heading">UG</span> : SY{tab} : 90.6%<br></br>
     {tab}College :Sangameshwar College,<br></br>{tab}Solapur<br></br>
     {tab}FY{tab} : 86% <br></br>
-    <span className="Heading">HSC </span>: 62 %<br></br>
-    <span className="Heading">SSC</span> : 75.40 %<br></br>
+    <span className="Heading">HSC </span>: 62 %<br></br>{tab}College :S.V.C.S. JR College,<br></br>{tab}Solapur<br></br>
+    <span className="Heading">SSC</span> : 75.40 %<br></br>{tab}College :S.V.C.S. HighSchool,<br></br>{tab}Solapur<br></br>
 </pre></div>
 
 const Skills = <div className="Skills"><pre>
