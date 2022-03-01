@@ -18,6 +18,7 @@ const Skills = <div className="Skills"><pre>
     Html,css,Js <br></br>
     ReactJs <br></br>
     Java <br></br>
+    Android <br></br>
     Flutter <br></br>
     Git <br></br>
 
