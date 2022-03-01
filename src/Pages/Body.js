@@ -21,11 +21,17 @@ export default function Body() {
         setX(e.pageX - 12)
         setY(e.pageY - 12)
     })
-    document.addEventListener('click', (e) => {
+    document.addEventListener('mousedown', (e) => {
         setcursorClass("Clicked")
-        setTimeout(() => {
-            setcursorClass("")
-        }, 100);
+        // setTimeout(() => {
+        //     setcursorClass("")
+        // }, 100);
+    })
+    document.addEventListener('mouseup', (e) => {
+        setcursorClass("")
+        // setTimeout(() => {
+        //     setcursorClass("")
+        // }, 100);
     })
 
     const [backimg, setBackimg] = useState(BackgroundHome);

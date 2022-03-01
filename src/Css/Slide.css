@@ -41,6 +41,12 @@
     margin: 1rem;
     height: 8px;
     border-radius: 0.5rem;
+}
+.Android{
+    background-color: #a4c639;
+    margin: 1rem;
+    height: 8px;
+    border-radius: 0.5rem;
 } 
 .Flutter{
     background-color: rgb(39, 128, 196);
@@ -68,7 +74,9 @@
 
 .SocialSite:hover{
     border-radius: 50%;   
-    box-shadow: 0px 00px  10px white; 
+    /* box-shadow: 0px 00px  10px rgba(0, 247, 255,0.8);   */
+    box-shadow: 0px 00px  10px white;  
+    
 } 
 @media screen and (max-width: 450px) {
     .Bars{

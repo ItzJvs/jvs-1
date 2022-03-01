@@ -9,7 +9,8 @@ import { useState, useEffect } from "react";
 
 export default function SlideBars() {
 
-    const [WebProg, setWebProg] = useState("10px");
+    // const [WebProg, setWebProg] = useState("10px");
+    const [AndroidProg, setAndroidProg] = useState("10px");
     const [ReactJsProg, setReactJsProg] = useState("10px");
     const [JavaProg, setJavaProg] = useState("10px");
     const [FlutterProg, setFlutterProg] = useState("10px");
@@ -18,9 +19,10 @@ export default function SlideBars() {
     useEffect(() => {
         var i = 10;
         var web = setInterval(() => {
-            if (i <= 200) setWebProg(i + "px");
+            // if (i <= 200) setWebProg(i + "px");
             if (i <= 150) setReactJsProg(i + "px")
-            if (i <= 80) setJavaProg(i + "px")
+            if (i <= 120) setJavaProg(i + "px")
+            if (i <= 100) setAndroidProg(i + "px");
             if (i <= 130) setFlutterProg(i + "px")
             if (i <= 100) setGitProg(i + "px")
             if (i === 200) clearInterval(web)
@@ -37,12 +39,15 @@ export default function SlideBars() {
     }
 
     return <div className="Bars">
+
         <i>" Exploaring.. : " </i>
-        <Progress Progress={WebProg} name="Web" subname="Web Dev" />
+        {/* <Progress Progress={WebProg} name="Web" subname="Web Dev" /> */}
         <Progress Progress={ReactJsProg} name="ReactJs" />
         <Progress Progress={JavaProg} name="Java   " />
+        <Progress Progress={AndroidProg} name="Android" subname="Android" />  
         <Progress Progress={FlutterProg} name="Flutter" />
         <Progress Progress={GitProg} name="Git    " />
+        {/* Social Media Links.. */}
         <div className="Social">
             <Social classname="SocialSite" link="https://www.linkedin.com/in/vivek-jagtap-21353b216/" media={Linkedin} />
             <Social classname="SocialSite" link="mailto:jagtapvs9832@gmail.com" media={Email} />

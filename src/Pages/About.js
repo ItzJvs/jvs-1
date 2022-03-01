@@ -32,6 +32,6 @@ export default function About() {
             <Attribute title="Skills" description={Skills} />
             <Attribute title="Projects / Achivements" description={Projects} />
         </div>
-        <span className='slogan'>It_All_Started_With_A_Dream..</span>
+        <span className='favLine'>It_All_Started_With_A_Dream..</span>
     </div>
 }
