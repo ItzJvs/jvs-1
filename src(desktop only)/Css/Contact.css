@@ -1,0 +1,53 @@
+.Contact{
+    height: 100vh;
+    width: 100vw; 
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+.IntroContact{
+    display: grid;  
+    padding: 2.5rem; 
+    margin: 2.5rem; 
+    line-height: 8rem;
+    grid-template-columns: auto auto auto ;
+}
+.Grid_Item, .Grid_Item_middle{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    height: 2.8rem;
+    width: 30rem;
+    line-height: 1.5rem;
+    background: rgba(36, 38, 48, 0.73);
+    border-radius:50px ; 
+}
+.Grid_Item:hover{
+    background: rgba(0, 0, 0, 0.63); 
+    box-shadow: 0 0 10px rgb(107, 174, 161);
+}
+.Grid_Item  img{
+  height:2rem;  
+} 
+.Grid_Item a{
+    display: flex;
+    align-items: center;
+}
+.Grid_Item2 { 
+    background-color: rgb(107, 174, 161);
+    display: flex;   
+    align-self: center;
+    
+    margin: 0.5rem;
+    margin-left: 25%;
+    margin-right: 25%;
+    height:1px;
+    width: 10rem;
+    border-radius:50px ; 
+}
+.Grid_Item_middle{
+    width: 10rem;
+}

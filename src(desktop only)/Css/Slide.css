@@ -12,20 +12,14 @@
   border-radius: 1rem;
   background: rgba(10,10,10,0.2);
   width: 25rem;
-  backdrop-filter:blur(2px);
-} 
-* img{
-    cursor: pointer;
 }
- 
 .com{
   display:flex; 
   align-items: center;  
   padding: 0;
   margin: 0.1rem;
   padding: 0px;
-  height: 2rem; 
-  width: auto;
+  height: 2rem;
 }
 .Web{
     background-color: rgb(57, 172, 143);
@@ -44,12 +38,6 @@
     margin: 1rem;
     height: 8px;
     border-radius: 0.5rem;
-}
-.Android{
-    background-color: #a4c639;
-    margin: 1rem;
-    height: 8px;
-    border-radius: 0.5rem;
 } 
 .Flutter{
     background-color: rgb(39, 128, 196);
@@ -62,11 +50,12 @@
     margin: 1rem;
     height: 8px;
     border-radius: 0.5rem;
-}  
+} 
+
+
+
 .Social{
    display: flex;
-   justify-content: center;
-   align-items: center;
 }
 .Social img{
     margin: 1rem;
@@ -74,22 +63,30 @@
      
 } 
 
-.SocialSite:hover{
+.Linkedin:hover{
     border-radius: 50%;   
-    /* box-shadow: 0px 00px  10px rgba(0, 247, 255,0.8);   */
-    box-shadow: 0px 00px  10px white;  
-    
-} 
-@media screen and (max-width: 450px) {
-    .Bars{
-        left: 3.5rem;
-        top: 8rem;
-        display: flex; 
-        width: 18rem;
-      }
-      .Social{
-        display: flex;
-        padding: 0.5rem;
-        justify-content:space-evenly;
-     }
+    box-shadow: 0px 00px  10px white; 
 }
+.Email:hover{ 
+     border-radius: 50%;   
+     box-shadow: 0px 00px  10px white;
+
+}
+.Insta:hover{ 
+    border-radius: 50%;   
+    box-shadow: 0px 00px  10px white;
+
+}
+.Whatsapp:hover{
+     border-radius: 50%;    
+     box-shadow: 0px 00px  10px white;
+
+}
+.Facebook:hover{
+         box-shadow: 0px 00px  10px white;
+         border-radius: 50%;    
+    
+}
+
+
+
