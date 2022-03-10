@@ -10,7 +10,7 @@
  
 .Body{  
     height:100vh ;
-    width: 100vw ;
+    width: 100vw ; 
     overflow: scroll;
 }
 #Cursor{
@@ -25,6 +25,7 @@
   z-index: 0;
   cursor: none;
 }
+
 .Clicked{
   border-width: 0.5rem;
   /* background-color: red !important; */

@@ -3,7 +3,7 @@ import BackgroundHome from "../assets/home.jpg";
 import Home from './Home';
 import About from './About';
 import Contact from './Contact';
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import {
     HashRouter as Router,
     Switch,
@@ -11,28 +11,32 @@ import {
     Redirect
 } from "react-router-dom";
 
-import '../Css/Body.css';
+import '../Css/Body.css'; 
+ 
 
 export default function Body() {
     const [X, setX] = useState(0);
     const [Y, setY] = useState(0);
     const [cursorClass, setcursorClass] = useState("");
-    document.addEventListener('mousemove', (e) => {
-        setX(e.pageX - 12)
-        setY(e.pageY - 12)
-    })
-    document.addEventListener('mousedown', (e) => {
-        setcursorClass("Clicked")
-        // setTimeout(() => {
-        //     setcursorClass("")
-        // }, 100);
-    })
-    document.addEventListener('mouseup', (e) => {
-        setcursorClass("")
-        // setTimeout(() => {
-        //     setcursorClass("")
-        // }, 100);
-    })
+    useEffect(()=>{
+        document.addEventListener('mousemove', (e) => {
+            setX(e.pageX - 12)
+            setY(e.pageY - 12)
+        })
+        document.addEventListener('mousedown', (e) => {
+            setcursorClass("Clicked")
+            // setTimeout(() => {
+            //     setcursorClass("")
+            // }, 100);
+        })
+        document.addEventListener('mouseup', (e) => {
+            setcursorClass("")
+            // setTimeout(() => {
+            //     setcursorClass("")
+            // }, 100);
+        })
+    },[])
+    
 
     const [backimg, setBackimg] = useState(BackgroundHome);
     return <Router>
@@ -45,7 +49,7 @@ export default function Body() {
                 backgroundSize: "cover",
                 backgroundAttachment: "fixed"
             }}>
-                <NavBar setBackimg={setBackimg} />
+                <NavBar setBackimg={setBackimg} /> 
                 <Switch>
                     <Route exact path="/Home"> <Home /> </Route>
                     <Route exact path="/About">  <About /></Route>
