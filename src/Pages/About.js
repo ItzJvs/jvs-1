@@ -33,6 +33,7 @@ export default function About() {
             <Attribute title="Projects / Achivements" description={Projects} />
         </div>
        
-        <span className='favLine'> <i>  It_All_Started_With_A_Dream..  </i></span> 
+        <span className='favLine' style={{fontFamily:""}}> <i>  It_All_Started_With_A_Dream..  </i></span> 
+        {/* <span className='favLine'>   𝑰𝒕_𝑨𝒍𝒍_𝑺𝒕𝒂𝒓𝒕𝒆𝒅_𝑾𝒊𝒕𝒉_𝑨_𝑫𝒓𝒆𝒂𝒎..   </span>  */}
     </div>
 }

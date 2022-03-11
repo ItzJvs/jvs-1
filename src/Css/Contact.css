@@ -56,6 +56,46 @@
 
 @media screen and (max-width:450px){
     .Contact{
+        width: 100vw;
+        height: 100vh;
+        overflow: scroll !important; 
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .Contact .IntroContact{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+        margin-top: 5rem ;
+        /* overflow: visible !important; */
+    } 
+    .Contact .IntroContact .Grid_Item  *{
+        font-size:80%;  
+    }
+    .Contact .IntroContact .Grid_Item pre a{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* overflow: visible !important;  */
+    }
+    .Contact .Grid_Item{ 
+        width: 80vw; 
+        border-radius: 0;
+    }
+    .Contact .IntroContact .Grid_Item pre{ 
+        display: block; 
+        width: 90%;  
+    }
+    .Contact .Grid_Item img { 
+        height: 8%;
+        width: 8%;
+    }
+     .Grid_Item_middle{ 
+        width: 10rem !important;
+    }
+    /* .Contact{
         height: 100%;
         width: 100vw; 
         display: flex;  
@@ -76,8 +116,7 @@
         padding: 0.3rem;
         margin: 0.5rem;
         height: fit-content;
-        width: 20rem; 
-        /* width: 20rem;  */
+        width: 20rem;  
         text-align: center ;
-    }
+    } */
 }

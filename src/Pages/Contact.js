@@ -8,16 +8,22 @@ export default function Contact() {
         <div className="IntroContact">
             <div className="Grid_Item">
                 <pre>Mobile    : +917066649832 </pre>
-            </div><div></div>
-            <div className="Grid_Item">
-                <pre> Email  : jagtapvs9832@gmail.com</pre>
+            </div>
+
+            <div></div>
+
+           <div className="Grid_Item">
+                <pre> Alternet Mobile   :   +917841888910 </pre>
             </div>
             <div className="Grid_Item">
                 <pre> Address   :   143 Kisan Nagar Behind Sutmil<br></br>   Akkalkot Road Solapur</pre>
-            </div><div></div>
-            <div className="Grid_Item">
-                <pre> Alternet Mobile   :   +917841888910 </pre>
             </div>
+            
+            <div></div>
+ <div className="Grid_Item">
+                <pre> Email  : jagtapvs9832@gmail.com</pre>
+            </div>
+            
             <div className="Grid_Item2"></div>
             <div className="Grid_Item_middle"> - : Social : - </div>
             <div className="Grid_Item2"> </div>

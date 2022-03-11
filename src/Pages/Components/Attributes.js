@@ -28,6 +28,9 @@ const Projects = <pre className="Projects">
     <a  rel="noreferrer"  target="_blank"   href="https://mrunkn.000webhostapp.com/Projects/DirtBike/"> DirtBike</a>
     <a  rel="noreferrer"  target="_blank"   href="https://mrunkn.000webhostapp.com/Projects/CAR/"> Car Game</a>
     <a  rel="noreferrer"  target="_blank"   href="https://mrunkn.000webhostapp.com/Projects/CALCULATOR/"> Calculator</a>
+    <a  rel="noreferrer"  target="_blank"   href="https://educationwebworld.000webhostapp.com/React-Js/TypingTest/"> TypingTest</a> 
+    <a  rel="noreferrer"  target="_blank"   href="https://gituservivek.github.io/jvs/"> MyPortfolio</a> 
+
 </pre>
 
-export { tab, Education, Skills, Projects };
+export {  Education, Skills, Projects };
