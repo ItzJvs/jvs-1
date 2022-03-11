@@ -1,7 +1,7 @@
 .About{ 
     display: flex;
     flex-direction: column;
-    justify-content: start; 
+    justify-content: center; 
     align-items: center;
     height: 85vh; 
     width: fit-content;
@@ -10,6 +10,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600; 
 }
+ 
 .List{
     display: flex;
 } 
@@ -89,6 +90,7 @@
 .Myphoto img{
     height: 10rem;
     width: 9.5rem;
+    -webkit-user-drag: none;
 }  
 .favLine{
     position: relative;

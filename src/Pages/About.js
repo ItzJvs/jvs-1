@@ -26,6 +26,7 @@ export default function About() {
             Hello, I'm Vivek Jagtap !<br></br>
              Computer Science Student <br></br>at<br></br> Sangameshwar College Solapur, Maharastra
         </div>
+       
         <div className="Line" style={{ width: `${lineWidth}px`, }}> </div>
         <div className="List">
             <Attribute title="Education" description={Education} />
